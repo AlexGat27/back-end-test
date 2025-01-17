@@ -3,7 +3,7 @@ import {IUser} from '@/domain/entity/user';
 import { NotFoundError } from '@/domain/errors';
 
 export type GetMe = (data: {
-  id: string,
+  id: number,
 }) =>
     Promise<IUser | never>
 export const buildGetMe = ({adapter}: UseCaseParams): GetMe=>{
