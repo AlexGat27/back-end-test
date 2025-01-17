@@ -12,7 +12,7 @@ export interface IUser extends User {}
  *            - created_at
  *          properties: 
  *            id:
- *                type: string
+ *                type: int
  *            email:
  *                type: string
  *            name:
