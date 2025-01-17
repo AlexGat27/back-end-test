@@ -21,11 +21,13 @@ export const buildCheckCredentials = ({userRepository}: Adapter): CheckCredentia
       },
       select: {
         id: true,
+        password: true,
         email: true,
         avatar: true,
         created_at: true
       }
-    }) 
+    })
+    console.log(user)
 
     if (!user || !user.password) {
       return null
